@@ -1,1 +1,20 @@
+import re
+# Check the exist of a substring in a given string
+s = 'foo123bar_*_789'
 
+#We use in to check whether a substring is in a string
+print('123' in s)
+print('456' in s)
+print('\n')
+
+print(s[3:6])
+print('\n')
+
+print(re.search('123', s))
+print(re.search('\*_78', s))
+
+print(s.find('_'))
+print(s.find('bar'))
+
+# pritn(s.index('_')) index chỉ sử dụng cho string
+print(s.index('bar'))
